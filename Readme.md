@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Tatiana Mathy](https://up.htmlacademy.ru/adaptive-individual/1/user/2344959).
-* Наставник: `Неизвестно`.
+* Наставник: `Малик Киров`.
 
 ---
 
