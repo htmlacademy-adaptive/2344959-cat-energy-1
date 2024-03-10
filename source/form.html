@@ -17,46 +17,46 @@
     </nav>
   </header>
   <main class="main-form">
-    <section class="program-form">
-      <form action="#" method="post" target="_blank">
-        <h1>Подбор программы</h1>
-        <p>Заполните анкету, и мы подберем
+    <section class="main-form__program-form program-form">
+      <form class="program-form__form" action="#" method="post" target="_blank">
+        <h1 class="program-form__title">Подбор программы</h1>
+        <p class="program-form__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
-        <fieldset>
-          <legend class="visually-hidden">Персональные данные</legend>
-          <ul>
-            <li>
+        <fieldset class="program-form__blank blank">
+          <legend class="visually-hidden blank__title">Персональные данные</legend>
+          <ul class="program-form__form-list">
+            <li class="program-form__form-item">
               <label for="name">ИМЯ:*</label>
               <input type="text" name="name" placeholder="Барсик" id="name" required>
             </li>
-            <li>
+            <li class="program-form__form-item">
               <label for="weight">Вес (кг):*</label>
               <input type="number" name="weight" placeholder="7" id="weight" required>
             </li>
-            <li>
+            <li class="program-form__form-item">
               <label for="age">Возраст (лет):</label>
               <input type="number" name="age" placeholder="7" id="age" required>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset>
-          <li>
-            <label for="slimming"></label>
+        <fieldset class="program-form__radio-buttons radio-buttons">
+          <li class="program-form__radio-item">
+            <label for="slimming">Похудение</label>
             <input type="radio" id="slimming" name="slimming" value="slimming" checked>
           </li>
-          <li>
-            <label for="mass-gain"></label>
-            <input type="radio" id="mass-gain" name="mass-gain" value="mass-gain" checked>
+          <li class="program-form__radio-item">
+            <label for="mass-gain">Набор массы</label>
+            <input type="radio" id="mass-gain" name="mass-gain" value="mass-gain">
           </li>
-          <li>
-            <label for="advice"></label>
-            <input type="radio" id="advice" name="advice" value="advice" checked>
+          <li class="program-form__radio-item">
+            <label for="advice">Не знаю (Нужен ваш совет)</label>
+            <input type="radio" id="advice" name="advice" value="advice">
           </li>
         </fieldset>
 
-        <fieldset>
-          <legend>Контактные данные<br>(владельца кота)</legend>
+        <fieldset class="program-form__contacts-user contacts-user">
+          <legend class="contacts-user__title">Контактные данные<br>(владельца кота)</legend>
 
           <label for="email">E-mail:*</label>
           <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
@@ -66,14 +66,14 @@
 
         </fieldset>
 
-        <fieldset>
+        <fieldset class="program-form__comment comment">
           <lable for="comment">Комментарий</lable>
           <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" cols="30"
             rows="10"></textarea>
         </fieldset>
 
-        <fieldset>
-          <legend>Дополнительно</legend>
+        <fieldset class="program-form__additionally additionally">
+          <legend class="additionally__title">Дополнительно</legend>
 
           <input type="checkbox" id="sweetener" name="sweetener" checked>
           <label for="sweetener">сахарозаменитель</label>
@@ -87,7 +87,7 @@
           <input type="checkbox" id="vitamins" name="vitamins">
           <label for="water">витамины</label>
 
-          <button type="button">отправить заявку</button>
+          <button class="program-form__button-form" type="button">отправить заявку</button>
 
         </fieldset>
       </form>
@@ -100,13 +100,13 @@
       <p class="footer__text">ул. Большая Конюшенная, д. 19/8</p>
       <p class="footer__text">Санкт-Петербург</p>
     </div>
-  <img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy">
-  <ul class="footer__social social">
-   <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
-   <li class="social__item"><a class="social__link" href="">Ютуб</a></li>
-   <li class="social__item"><a class="social__link" href="">Телеграм</a></li>
-  </ul>
-  <a class="footer__logo-htmlacademy">HTML Academy</a>
+    <img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy">
+    <ul class="footer__social social">
+      <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
+      <li class="social__item"><a class="social__link" href="">Ютуб</a></li>
+      <li class="social__item"><a class="social__link" href="">Телеграм</a></li>
+    </ul>
+    <a class="footer__logo-htmlacademy" href="#">HTML Academy</a>
   </footer>
 
 </body>
