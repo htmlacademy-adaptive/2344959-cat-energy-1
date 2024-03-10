@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-nav__logo" href="#">
+        <img src="img/images/logo-1.svg" width="70" height="59" alt="логотип Cat Energy">
+        <img src="img/images/logo-2.svg" width="101" height="18" alt="cat energy">
+      </a>
+      <button class="main-nav__button-header" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </nav>
+  </header>
+  <main class="main-form">
+    <section class="program-form">
+      <form action="#" method="post" target="_blank">
+        <h1>Подбор программы</h1>
+        <p>Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <fieldset>
+          <legend class="visually-hidden">Персональные данные</legend>
+          <ul>
+            <li>
+              <label for="name">ИМЯ:*</label>
+              <input type="text" name="name" placeholder="Барсик" id="name" required>
+            </li>
+            <li>
+              <label for="weight">Вес (кг):*</label>
+              <input type="number" name="weight" placeholder="7" id="weight" required>
+            </li>
+            <li>
+              <label for="age">Возраст (лет):</label>
+              <input type="number" name="age" placeholder="7" id="age" required>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <li>
+            <label for="slimming"></label>
+            <input type="radio" id="slimming" name="slimming" value="slimming" checked>
+          </li>
+          <li>
+            <label for="mass-gain"></label>
+            <input type="radio" id="mass-gain" name="mass-gain" value="mass-gain" checked>
+          </li>
+          <li>
+            <label for="advice"></label>
+            <input type="radio" id="advice" name="advice" value="advice" checked>
+          </li>
+        </fieldset>
+
+        <fieldset>
+          <legend>Контактные данные<br>(владельца кота)</legend>
+
+          <label for="email">E-mail:*</label>
+          <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+
+          <label for="phone">Телефон:*</label>
+          <input type="phone" name="phone" placeholder="8 (960) 900-60-90" id="phone" required>
+
+        </fieldset>
+
+        <fieldset>
+          <lable for="comment">Комментарий</lable>
+          <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" cols="30"
+            rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Дополнительно</legend>
+
+          <input type="checkbox" id="sweetener" name="sweetener" checked>
+          <label for="sweetener">сахарозаменитель</label>
+
+          <input type="checkbox" id="water" name="water">
+          <label for="water">питьевая вода</label>
+
+          <input type="checkbox" id="milk" name="milk">
+          <label for="water">молоко</label>
+
+          <input type="checkbox" id="vitamins" name="vitamins">
+          <label for="water">витамины</label>
+
+          <button type="button">отправить заявку</button>
+
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+  <footer class="footer-form">
+    <div class="footer-form__footer-address">
+      <p class="footer-form__heading">приглашаем к сотрудничеству дилеров!</p>
+      <p class="footer-form__text">ул. Большая Конюшенная, д. 19/8</p>
+      <p class="footer-form__text">Санкт-Петербург</p>
+    </div>
+  <img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy">
+  <ul class="footer-form__social social">
+   <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
+   <li class="social__item"><a class="social__link" href="">Ютуб</a></li>
+   <li class="social__item"><a class="social__link" href="">Телеграм</a></li>
+  </ul>
+  <a class="footer-form__logo-htmlacademy">HTML Academy</a>
+  </footer>
+
+</body>

@@ -6,24 +6,24 @@
   <title>Каталог</title>
 </head>
 <body>
-  <header class="main-header">
+  <header class="header-inner">
     <nav class="main-nav">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-nav__logo" href="#">
         <img src="img/images/logo-1.svg" width="70" height="59" alt="логотип Cat Energy">
         <img src="img/images/logo-2.svg" width="101" height="18" alt="cat energy">
       </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__button-header" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
   <main class="main-inner">
-    <section class="catalog-products">
-      <h1 class="title-catalog">Каталог продукции</h1>
-      <div class="cards-products">
-        <ul class="product-card-list">
+    <section class="main-inner__catalog-products catalog-products">
+      <h1 class="catalog-products__title">Каталог продукции</h1>
+      <div class="catalog-products__cards">
+        <ul class="catalog-products__card-list">
           <li class="product-card-item">
             <a class="product-card-link" href="">
               <img src="img/images/img-catalog-1.jpg" width="140" height="107" alt="корм с курицей 500 г">
-              <h2>cat energy pro 500 г</h2>
+              <h2 class="">cat energy pro 500 г</h2>
               <table class="card-description">
                 <dt>Масса</dt>
                 <dd>500 г</dd>
@@ -176,20 +176,19 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="footer-contacts">
-      <p>приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer-contacts-text">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</p>
+  <footer class="inner-footer">
+    <div class="inner-footer__footer-address">
+      <p class="inner-footer__heading">приглашаем к сотрудничеству дилеров!</p>
+      <p class="inner-footer__text">ул. Большая Конюшенная, д. 19/8</p>
+      <p class="inner-footer__text">Санкт-Петербург</p>
     </div>
-    <img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy">
-    <ul class="social__list">
-      <li class="social__item"><a class="social__link social__link--vkontakte" href="">Вконтакте</a></li>
-      <li class="social__item"><a class="social__link social__link--youtube" href="">Ютуб</a></li>
-      <li class="social__item"><a class="social__link social__link--telegram" href="">Телеграм</a></li>
-    </ul>
-    <p class="logo-HTMLacademy">HTML Academy</p>
+  <img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy">
+  <ul class="inner-footer__social social">
+   <li class="social__item"><a class="social__link" href="">Вконтакте</a></li>
+   <li class="social__item"><a class="social__link" href="">Ютуб</a></li>
+   <li class="social__item"><a class="social__link" href="">Телеграм</a></li>
+  </ul>
+  <a class="inner-footer__logo-htmlacademy">HTML Academy</a>
   </footer>
 </body>
 
