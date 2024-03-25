@@ -1,26 +1,26 @@
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
-  font-weight: regular;
+  src: url("../fonts/lato/lato-Regular.woff2") format("woff2"), url("../fonts/lato/lato-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswald/Oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/Oswaldmedium.woff") format("woff");
-  font-weight: regular;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswald/Oswaldregular.woff2") format("woff2"), url("../fonts/oswald/Oswaldregular.woff") format("woff");
-  font-weight: regular;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-.main-container__wrapper.wrapper {
-  background-color: #68B738;
+.wrapper {
+  background-color: #68b738;
 }
 .wrapper__title {
   font-family: "Oswald", sans-serif;
@@ -49,13 +49,13 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: #68b738;
   text-decoration: none;
   padding: 13px 63px;
   text-transform: uppercase;
 }
 .advantages__item {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .advatages__title {
   font-family: "Oswald", sans-serif;
@@ -95,7 +95,7 @@
   font-weight: 400;
   line-height: 18px;
 }
-.main-container__examples.examples {
+.examples {
   background-color: #eaeaea;
 }
 .examples__title {
@@ -144,7 +144,7 @@
   line-height: 36px;
   text-transform: none;
 }
-.catalog-products__card-list.card-list {
+.catalog-products__card-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -196,7 +196,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: #68b738;
   text-decoration: none;
   padding: 14px 24px;
   text-transform: uppercase;
@@ -231,7 +231,7 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-.catalog-products__additional-products-list.additional-products-list {
+.additional-products-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -265,7 +265,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: #68b738;
   text-decoration: none;
   padding: 14px 24px;
   text-transform: uppercase;
@@ -293,7 +293,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: #68b738;
   text-decoration: none;
   padding: 14px 24px;
   text-transform: uppercase;
