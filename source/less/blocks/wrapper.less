@@ -1,5 +1,21 @@
 .wrapper {
-  background-color: #68b738;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #3840b7;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    display: flex;
+    background-color: #68b738;
+  }
 }
 
 .wrapper__title {
@@ -10,9 +26,21 @@
   line-height: 50px;
   color: #ffffff;
   margin: 27px 35px;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+   }
+
+  @media (min-width: @desktop-width) {
+   color: #000000;
+  }
 }
 
 .wrapper__text {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 25px;
+  margin-top: 0;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -20,13 +48,26 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+   }
+
+  @media (min-width: @desktop-width) {
+   color: #000000;
+  }
 }
 
 .wrapper-image {
-  display: block;
+  justify-self: center;
+
+@media (min-width: @tablet-width) {
+  order: 2;
+}
 }
 
 .wrapper__button {
+  margin-top: 50px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -37,3 +78,5 @@
   padding: 13px 63px;
   text-transform: uppercase;
 }
+
+
