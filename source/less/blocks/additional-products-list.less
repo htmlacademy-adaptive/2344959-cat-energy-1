@@ -1,3 +1,21 @@
 .additional-products-list {
   .list-reset();
+
+  @media (min-width: @desktop-width) {
+  width: 100%;
+  }
+}
+
+
+.additional-products-list__additional-products-item {
+  @media (min-width: @tablet-width) {
+    outline: 1px solid #cdcdcd;
+    padding: 26px 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    outline: none;
+    padding: 15px 0;
+  }
 }
