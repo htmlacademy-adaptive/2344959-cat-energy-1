@@ -638,7 +638,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  text-transform: none;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
@@ -903,7 +902,7 @@ img {
   margin-top: 40px;
 }
 .footer__logo-htmlacademy {
-  font-family: Lato, san-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
