@@ -4,6 +4,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-form__text {
@@ -14,6 +20,26 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__div {
+  @media (min-width: @desktop-width) {
+  display: flex;
+  }
+}
+
+.program-form__radio {
+  margin: 70px 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .program-form__button-form {
@@ -28,4 +54,14 @@
   padding: 14px 24px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 60px;
+  }
+}
+
+.program-form__contacts-user {
+  margin: 65px 0;
 }

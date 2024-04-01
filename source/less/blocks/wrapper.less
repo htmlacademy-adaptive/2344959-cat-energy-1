@@ -2,16 +2,15 @@
   display: grid;
   background-color: #68b738;
   margin-bottom: 20px;
-}
+  margin: 0;
 
 @media (min-width: @tablet-width) {
-  .wrapper {
     background-color: #ffffff;
+    margin-bottom: 0;
   }
-}
+
 
 @media (min-width: @desktop-width) {
-  .wrapper {
     background-color: #68b738;
   }
 }
@@ -23,14 +22,15 @@
   font-weight: 400;
   line-height: 50px;
   color: #ffffff;
-  margin: 27px 35px;
 
   @media (min-width: @tablet-width) {
     color: #000000;
-   }
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   @media (min-width: @desktop-width) {
-   color: #000000;
+    color: #000000;
   }
 }
 
@@ -49,23 +49,21 @@
 
   @media (min-width: @tablet-width) {
     color: #000000;
-   }
-
-  @media (min-width: @desktop-width) {
-   color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1/2;
   }
 }
 
 .wrapper-image {
   justify-self: center;
 
-@media (min-width: @tablet-width) {
-  order: 2;
-}
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .wrapper__button {
-  margin-top: 50px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -75,6 +73,13 @@
   text-decoration: none;
   padding: 13px 63px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+  grid-column: 1/2;
+  }
 }
-
-
