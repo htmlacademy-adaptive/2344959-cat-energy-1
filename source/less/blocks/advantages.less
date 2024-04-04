@@ -1,13 +1,11 @@
-.main-container__advantages {
-  margin: 20px 0;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-  }
+.advantages__item {
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
-.advantages__item {
-  background-color: #f2f2f2;
+.advantages__div {
+  display: flex;
+  gap: 11px;
 }
 
 .advatages__title {
@@ -34,5 +32,20 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.advantages__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29.64px;
   }
 }

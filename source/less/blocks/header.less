@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 55px 0;
+  }
+}
+
+.header__div {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__button-header {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

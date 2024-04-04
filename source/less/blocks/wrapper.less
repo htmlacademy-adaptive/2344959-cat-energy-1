@@ -21,11 +21,15 @@
   font-weight: 400;
   line-height: 50px;
   color: #ffffff;
+  margin: 25px 35px;
 
   @media (min-width: @tablet-width) {
     color: #000000;
     font-size: 60px;
     line-height: 60px;
+    width: 416px;
+    margin-left: 90px;
+    margin-top: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,17 +46,24 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  justify-self: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
     grid-column: 1 / 2;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    justify-self: start;
+    margin-left: 90px;
   }
 }
 
 .wrapper-image {
   justify-self: center;
+  margin-top: 29px;
 }
 
 .wrapper__button {
@@ -65,11 +76,15 @@
   text-decoration: none;
   padding: 13px 63px;
   text-transform: uppercase;
+  display: inline-block;
+  justify-self: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
     grid-row: 3/3;
+    justify-self: start;
+    margin-left: 90px;
   }
 
   @media (min-width: @desktop-width) {}

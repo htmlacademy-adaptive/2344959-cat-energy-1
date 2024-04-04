@@ -1,5 +1,15 @@
 .examples {
   background-color: #eaeaea;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #eaeaea;
+  }
+
 }
 
 .examples__title {
@@ -7,6 +17,8 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin-bottom: 40px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -19,6 +31,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  color: #444444;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -27,7 +40,15 @@
 }
 
 .examples__description {
+  display: block;
+
+  @media (min-width: @tablet-width) {
   display: flex;
+  }
+
+  @media (min-width: @tablet-width) {
+  display: block;
+  }
 }
 
 .examples__table {
@@ -54,8 +75,8 @@
   line-height: 12px;
 
   @media (min-width: @tablet-width) {
-  font-size: 14px;
-  line-height: 14px;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
