@@ -8,14 +8,17 @@
   <title>Каталог</title>
 </head>
 
-<body>
+<body class="page__body">
+  <div class="container">
   <header class="header">
-    <nav class="header__nav nav">
-      <a class="nav__logo" href="#">
-        <img src="img/images/logo-1.svg" width="70" height="59" alt="логотип Cat Energy">
-        <img src="img/images/logo-2.svg" width="101" height="18" alt="cat energy">
+    <a class="header__logo" href="index.html">
+      <img src="img/images/logo-1.svg" width="70" height="59" alt="логотип Cat Energy">
       </a>
+      <a class="header__logo" href="index.html">
+      <img src="img/images/logo-2.svg" width="101" height="18" alt="cat energy">
+    </a>>
       <button class="header__button-header" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html">главная</a></li>
         <li class="nav__item"><a href="#">каталог продукции</a></li>
@@ -23,7 +26,9 @@
       </ul>
     </nav>
   </header>
+  </div>
   <main class="main-inner">
+    <div class="container">
     <section class="main-inner__catalog-products catalog-products">
       <h1 class="catalog-products__title">Каталог продукции</h1>
       <div class="catalog-products__cards">
@@ -224,15 +229,16 @@
           кота в подарок!</p>
       </div>
     </section>
+  </div>
   </main>
   <footer class="footer">
     <div class="footer__footer-address">
       <p class="footer__heading">приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer__text">ул. Большая Конюшенная, д. 19/8</p>
-      <p class="footer__text">Санкт-Петербург</p>
+      <p class="footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="footer__social">
     <img src="img/images/map-footer.jpg" width="320" height="362" alt="карта расположения">
+    <div class="footer-div">
     <img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy">
     <ul class="footer__social-list social-list">
       <li class="social-list__item"><a class="social__link" href="">Вконтакте</a></li>
@@ -240,6 +246,7 @@
       <li class="social-list__item"><a class="social__link" href="">Телеграм</a></li>
     </ul>
     <a class="footer__logo-htmlacademy" href="#">HTML Academy</a>
+    </div>
     </div>
   </footer>
 </body>
