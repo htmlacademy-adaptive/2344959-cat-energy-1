@@ -3,13 +3,10 @@
   align-items: center;
   margin-top: 25px;
   justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-
-  }
+  position: relative;
 
   @media (min-width: @desktop-width) {
-    margin: 55px 0;
+  margin: 55px 0;
   }
 }
 
@@ -24,7 +21,68 @@
 }
 
 .header__button-header {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+
+
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.header--closed .header__button-header::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.header--closed .header__button-header:active::before {
+
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+}
+
+.header--opened .header__button-header {
+  top: 26px;
+  left: auto;
+  right: 21px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#000000, 30%);
   }
 }
