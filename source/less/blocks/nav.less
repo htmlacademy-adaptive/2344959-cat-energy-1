@@ -4,14 +4,14 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    gap: 33px;
     text-decoration: none;
   }
 }
 
 .nav__item {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  padding-top:22px;
+  margin: 22px 0;
   list-style: none;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -19,9 +19,130 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  border-top: 1px solid #E6E6E6;
+
+  @media (min-width: @tablet-width) {
+  border-top: none;
+  align-self: center;
+  margin: 33px;
+  margin-right: 0;
+  padding: 0;
+
+  &--active {
+    position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+    height: 2px;
+    background: #68B738;
+  }
+  }
+  }
+
 }
 
 .nav__link {
+  justify-self: center;
   text-decoration: none;
   color: #000000;
+}
+
+.nav__button-header {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.nav--closed .nav__button-header::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.nav--closed .nav__button-header:active::before {
+
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+}
+
+@media (max-width: @mobile-width-only) {
+  .nav--closed .nav__item {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.nav--closed .nav__item--active a {
+  padding-right: 70px;
+  padding-left: 70px;
+  text-align: center;
+}
+
+.nav--opened .nav__button-header {
+  top: 26px;
+  left: auto;
+  right: 21px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#000000, 30%);
+  }
+}
+
+.nav--opened .nav__list {
+
+  @media (max-width: @mobile-width-only) {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  left: 0px;
+  z-index: 10;
+  min-height: auto;
+  background-color: #ffffff;
+  }
 }
