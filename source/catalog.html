@@ -9,24 +9,25 @@
 </head>
 
 <body class="page__body">
-  <div class="container">
-  <header class="header">
+
+  <header class="header container">
     <a class="header__logo" href="index.html">
       <img src="img/images/logo-1.svg" width="70" height="59" alt="логотип Cat Energy">
       </a>
       <a class="header__logo" href="index.html">
       <img src="img/images/logo-2.svg" width="101" height="18" alt="cat energy">
-    </a>>
-      <button class="header__button-header" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="header__nav nav">
+    </a>
+
+      <nav class="header__nav nav nav--closed nav--nojs">
+        <button class="nav__button-header" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="nav__list">
-        <li class="nav__item"><a href="index.html">главная</a></li>
-        <li class="nav__item"><a href="#">каталог продукции</a></li>
-        <li class="nav__item"><a href="form.html">подбор программы</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
+        <li class="nav__item nav__item--active"><a class="nav__link" href="#">каталог продукции</a></li>
+        <li class="nav__item"><a class="nav__link" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
   </header>
-  </div>
+
   <main class="main-inner">
     <div class="container">
     <section class="main-inner__catalog-products catalog-products">
@@ -188,6 +189,7 @@
             <a class="card-item__button-catalog-card" href="#">Заказать</a>
           </li>
           <li class="extra-card">
+            <button class="extra-card__button-product" type="button"><span class="visually-hidden">Показать еще товары</span></button>
             <p class="extra-card__title">Показать еще 100500 товаров</p>
             <p class="extra-card__text">На самом деле вкусов гораздо больше!</p>
             <a class="extra-card__button" href="#">Показать все</a>
@@ -249,6 +251,7 @@
     </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

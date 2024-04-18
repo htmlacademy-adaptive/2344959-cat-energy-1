@@ -1,3 +1,11 @@
+.card-item__card-link {
+  align-self: center;
+}
+
+.card-item__card-title {
+  align-self: center;
+}
+
 .card-item__card-link-title {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -20,11 +28,18 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    align-self: center;
+    width: 100%;
   }
 }
 
 .card-item__card-table {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+  border-bottom: 1px solid #c4c4c4;
+  justify-content: space-between;
+  }
 }
 
 .card-item__card-table-description {
@@ -49,8 +64,15 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68b738;
+  background-color: #68B738;
   text-decoration: none;
   padding: 14px 24px;
   text-transform: uppercase;
+  align-self: center;
+  width: 250px;
+  padding: 10px 94px;
+
+  @media (min-width: @tablet-width) {
+  margin-bottom: 40px;
+  }
 }
