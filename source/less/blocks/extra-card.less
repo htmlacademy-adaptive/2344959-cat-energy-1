@@ -3,6 +3,15 @@
   @media (min-width: @tablet-width) {
   padding: 0 37px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+
 }
 
 .extra-card__button-product {
@@ -10,9 +19,7 @@
   align-self: center;
   justify-self: center;
 
-  @media (min-width: @tablet-width) {
-  margin: 50px 132px;
-}
+
 
   &::before,
   &::after {
@@ -67,9 +74,9 @@
 }
 
 .extra-card__button {
-  display: inline-block;
+  display: grid;
   justify-content: center;
-  padding: 10px 95px;
+  padding: 10px 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
