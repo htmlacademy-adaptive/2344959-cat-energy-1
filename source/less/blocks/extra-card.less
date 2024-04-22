@@ -1,49 +1,24 @@
 .extra-card {
+  position: relative;
   display: grid;
   padding: 25px 50px;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  height: 207px;
 
   @media (min-width: @tablet-width) {
   align-content: space-between;
   padding: 50px 37px 40px 37px;
   width: 324px;
   border: 2px solid #ebebeb;
+  height: 429px;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    height: 431px;
   }
 
-}
-
-.extra-card__button-product {
-  position: relative;
-  align-self: center;
-  justify-self: center;
-
-
-
-  &::before,
-  &::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60px;
-    height: 2px;
-    background-color: #d3d3d3;
-  }
-
-  &::before {
-    transform: rotate(180deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-90deg);
-  }
 }
 
 .extra-card__title {
@@ -93,6 +68,30 @@
   text-decoration: none;
   text-transform: uppercase;
   height: 40px;
+
+  justify-self: center;
+  align-self: center;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    width: 60px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(180deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;

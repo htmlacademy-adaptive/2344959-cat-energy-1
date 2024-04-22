@@ -1,12 +1,21 @@
 .additional-products-item {
+  position: relative;
   padding-top: 13px;
   padding-bottom: 19px;
-  border-top: 1px solid #cdcdcd;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    width: 894px;
+    height: 1px;
+    background-color: #cdcdcd;
+  }
+
 
   @media (min-width: @tablet-width) {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #cdcdcd;
   padding: 13px 38px 19px 38px;
   }
 
@@ -38,6 +47,7 @@
 }
 
 .additional-products-item__div {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
