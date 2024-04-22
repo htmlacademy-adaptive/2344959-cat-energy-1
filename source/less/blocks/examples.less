@@ -8,6 +8,8 @@
 
   @media (min-width: @desktop-width) {
     background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
 }
@@ -24,6 +26,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+  margin-bottom: 76px;
+  }
 }
 
 .examples__text {
@@ -36,6 +42,11 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+  grid-column: 1/2;
+  margin: 70px 0 69px 0;
   }
 }
 
@@ -113,8 +124,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    margin-top: 55px;
+    margin: 55px 0 75px 0;
     width: 100%;
   }
+}
+
+.examples__img-cat-before {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.examples__img-cat-after{
+  grid-column: 3/4;
+  grid-row: 1/3;
 }
