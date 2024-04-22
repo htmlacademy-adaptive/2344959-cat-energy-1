@@ -1,11 +1,14 @@
 .extra-card {
   display: grid;
-  @media (min-width: @tablet-width) {
-  padding: 0 37px;
-  }
+  padding: 25px 50px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: @tablet-width) {
-    width: 324px;
+  align-content: space-between;
+  padding: 50px 37px 40px 37px;
+  width: 324px;
+  border: 2px solid #ebebeb;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,6 +55,7 @@
   line-height: 20px;
   color: #111111;
   justify-self: center;
+  margin-top: 23px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -66,6 +70,8 @@
   font-weight: 400;
   line-height: 16px;
   color: #111111;
+  margin-bottom: 21px;
+  justify-self: center;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -91,6 +97,5 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 40px;
   }
 }
