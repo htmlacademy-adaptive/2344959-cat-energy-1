@@ -1,3 +1,8 @@
+.form-item {
+  display: flex;
+  margin-bottom: 13px;
+}
+
 .form-item__form-text {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -5,9 +10,43 @@
   font-weight: 400;
   line-height: 18px;
   color: #444444;
+  padding: 0;
+
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 29.64px;
+  font-size: 20px;
+  line-height: 29.64px;
+  }
+}
+
+.form-item__radio {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #a51d1d;
+  }
+}
+
+.form-item__input {
+  outline: 1px solid #e7e7e7;
+  border: none;
+  margin-bottom: 14px;
+  margin-left: 13px;
+  padding: 14px 15px 13px 15px;
+  flex-grow: 1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+  padding: 11px 20px;
   }
 }
