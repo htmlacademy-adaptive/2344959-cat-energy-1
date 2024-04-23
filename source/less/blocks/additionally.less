@@ -14,6 +14,7 @@ margin: 0;
 }
 
 .additionally__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -32,6 +33,18 @@ margin: 0;
   @media (min-width: @desktop-width) {
   margin-top: 70px;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 114%;
+    width: 1400px;
+    height: 2px;
+    display: block;
+    background-color: #68B738;
+    }
 }
 
 

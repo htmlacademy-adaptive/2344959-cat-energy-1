@@ -5,6 +5,7 @@
 }
 
 .contacts-user__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -23,6 +24,18 @@
     @media (min-width: @tablet-width) {
     margin-top: 70px;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: 109%;
+    width: 1400px;
+    height: 2px;
+    display: block;
+    background-color: #68B738;
+    }
 }
 
 .contacts-user__form-text {
