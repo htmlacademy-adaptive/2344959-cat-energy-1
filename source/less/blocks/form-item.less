@@ -18,6 +18,29 @@
   }
  }
 
+.form-item__form-text-additionally {
+  position: relative;
+  margin-left: 45px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+    margin-bottom: 32px;
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -23%;
+    left: -45px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    outline: 1px solid #cdcdcd;
+    }
+}
+
  .form-item__form-text-radio {
   position: relative;
   margin-left: 45px;
