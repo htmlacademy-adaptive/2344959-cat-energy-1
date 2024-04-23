@@ -12,27 +12,52 @@
   color: #444444;
   padding: 0;
 
-
   @media (min-width: @tablet-width) {
   font-size: 20px;
   line-height: 29.64px;
   }
-}
+ }
 
-.form-item__radio {
+ .form-item__form-text-radio {
   position: relative;
+  margin-left: 45px;
+  margin-bottom: 13px;
 
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 36px;
-    height: 2px;
-    background-color: #a51d1d;
+  @media (min-width: @tablet-width) {
+  margin-bottom: 18px;
+  margin-left: 87px;
+  }
+
+  @media (min-width: @tablet-width) {
+  margin-left: 60px;
+  }
+
+ &::before {
+  content: "";
+  position: absolute;
+  top: -23%;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  outline: 1px solid #cdcdcd;
   }
 }
+
+.form-item__form-text-radio--checked {
+  &::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: -37px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  border-radius: 50%;
+  background-color: #68B738;
+  }
+ }
 
 .form-item__input {
   outline: 1px solid #e7e7e7;
