@@ -42,13 +42,15 @@ img {
 }
 @media (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
     padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    min-width: 1280px;
+    width: 1280px;
     padding: 0 110px;
   }
 }
@@ -426,6 +428,7 @@ img {
   text-decoration: none;
   color: #000000;
   grid-column: 1/3;
+  justify-self: flex-start;
 }
 .advantages__link::after {
   content: "";
@@ -435,7 +438,6 @@ img {
   left: 100%;
   width: 24px;
   height: 12px;
-  background-color: #e91e1e;
   transform: translate(5px, -50%);
   background-size: 24px 12px;
 }
@@ -1084,7 +1086,8 @@ img {
   .program-form__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 65px 0 54px 0;
+    margin-top: 65px;
+    margin-bottom: 54px;
   }
 }
 .program-form__text {
@@ -1365,18 +1368,19 @@ img {
 }
 .form-item__form-text-radio {
   position: relative;
-  margin-left: 45px;
-  margin-bottom: 13px;
+  padding-left: 45px;
+  padding-bottom: 13px;
+  background-color: #68B738;
 }
 @media (min-width: 768px) {
   .form-item__form-text-radio {
-    margin-bottom: 18px;
-    margin-left: 87px;
+    padding-bottom: 18px;
+    padding-left: 87px;
   }
 }
 @media (min-width: 768px) {
   .form-item__form-text-radio {
-    margin-left: 60px;
+    padding-left: 60px;
   }
 }
 .form-item__form-text-radio::before {
@@ -1421,6 +1425,9 @@ img {
   display: flex;
   background-color: #F2F2F2;
   padding: 26px 20px;
+  top: 50%;
+  left: 0;
+  transform: translateY(50%);
 }
 @media (min-width: 768px) {
   .footer__footer-address {
@@ -1501,6 +1508,11 @@ img {
 .footer__img {
   display: block;
   width: 100%;
+}
+.footer__div-footer-address {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 .social-list {
   margin: 0;
