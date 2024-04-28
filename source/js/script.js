@@ -12,5 +12,3 @@ navButton.addEventListener('click', function () {
     navHeader.classList.remove('nav--opened');
   }
 });
-
-

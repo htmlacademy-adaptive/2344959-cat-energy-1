@@ -1,6 +1,18 @@
 .form-item {
   display: flex;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form-item__form-text {
@@ -41,14 +53,19 @@
     }
 }
 
+.form-item__radio {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+  }
+}
+
   .form-item__form-text-radio {
   position: relative;
   padding-left: 45px;
   padding-bottom: 13px;
-  background-color: #68B738;
 
   @media (min-width: @tablet-width) {
-  padding-bottom: 18px;
+  padding-bottom: 5px;
   padding-left: 87px;
   }
 
@@ -59,8 +76,8 @@
   &::before {
   content: "";
   position: absolute;
-  top: -23%;
-  left: -45px;
+  top: 2px;
+  left: 0;
   width: 30px;
   height: 30px;
   display: block;
@@ -73,8 +90,8 @@
   &::after {
   content: "";
   position: absolute;
-  top: 15%;
-  left: -37px;
+  top: 10px;
+  left: 9px;
   width: 13px;
   height: 13px;
   display: block;

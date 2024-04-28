@@ -1,10 +1,12 @@
+.footer__img-footer-address {
+position: relative;
+min-height: 400px;
+}
+
 .footer__footer-address {
   display: flex;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
   padding: 26px 20px;
-  top: 50%;
-  left: 0;
-  transform: translateY(50%);
 
 
   @media (min-width: @tablet-width) {
@@ -14,16 +16,19 @@
   @media (min-width: @desktop-width) {
     padding: 60px 74px;
     background-color: #ffffff;
-    position: absolute;
     display: block;
-    top: 225%;
-    left: -12%;
-    z-index: 1;
-    transform: translate(50%);
     width: 565px;
     display: flex;
     gap: 87px;
   }
+}
+
+.footer__map {
+width: 100%;
+
+@media (min-width: @desktop-width) {
+  position: absolute;
+}
 }
 
 .footer__heading {
@@ -53,10 +58,6 @@
     font-size: 16px;
     line-height: 20px;
   }
-}
-
-.footer-social {
-  position: relative;
 }
 
 .footer__div {
@@ -89,8 +90,4 @@
   width: 100%;
 }
 
-.footer__div-footer-address {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1280px;
-}
+

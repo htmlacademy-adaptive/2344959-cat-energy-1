@@ -2,7 +2,6 @@
   display: grid;
   background: rgba(255, 255, 255, 0.8) linear-gradient(to bottom, transparent 0%, #68B738D9 0%, #68B738D9 65%, transparent 65%);
   margin-bottom: 20px;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -10,6 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1330px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 54px;
     margin-top: 29px;
@@ -69,6 +69,9 @@
 }
 
 .wrapper-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   justify-self: center;
   margin-top: 29px;
 
