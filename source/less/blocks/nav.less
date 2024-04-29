@@ -1,8 +1,5 @@
-
-
 .nav__list {
   .list-reset();
-
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -13,7 +10,7 @@
 .nav__item {
   display: grid;
   padding-top: 22px;
-  margin: 22px;
+  margin-right: 32px;
   list-style: none;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -23,11 +20,13 @@
   text-transform: uppercase;
   border-top: 1px solid #e6e6e6;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
   @media (min-width: @tablet-width) {
     border-top: none;
     align-self: center;
-    margin: 33px 0 10px 33px;
-    margin-right: 0;
     padding: 0;
 
     &--active {
