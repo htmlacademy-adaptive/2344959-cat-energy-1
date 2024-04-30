@@ -1,10 +1,40 @@
+.extra-card {
+  position: relative;
+  display: grid;
+  padding: 25px 50px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  height: 207px;
+
+  @media (min-width: @tablet-width) {
+    align-content: space-between;
+    padding: 50px 37px 40px 37px;
+    width: 324px;
+    border: 2px solid #ebebeb;
+    height: 429px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 431px;
+  }
+}
+
 .extra-card__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   color: #111111;
+  justify-self: center;
+  margin-top: 23px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .extra-card__text {
@@ -14,12 +44,19 @@
   font-weight: 400;
   line-height: 16px;
   color: #111111;
+  margin-bottom: 21px;
+  justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .extra-card__button {
-  display: inline-block;
+  display: grid;
   justify-content: center;
-  padding: 10px 95px;
+  padding: 10px 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -29,4 +66,34 @@
   background-color: #f2f2f2;
   text-decoration: none;
   text-transform: uppercase;
+  height: 40px;
+  width: 169px;
+  justify-self: center;
+  align-self: center;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    width: 60px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(180deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
