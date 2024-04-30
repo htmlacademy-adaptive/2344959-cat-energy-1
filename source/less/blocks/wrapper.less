@@ -2,29 +2,49 @@
   display: grid;
   background: rgba(255, 255, 255, 0.8) linear-gradient(to bottom, transparent 0%, #68b738d9 0%, #68b738d9 65%, transparent 65%);
   margin-bottom: 20px;
+  background-image: url("../img/images/img-general.png");
+  background-repeat: no-repeat;
+  background-size: 320px;
+  background-position: 50% 3px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/images/img-general@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
-    background: none;
+    background-image: none;
+    background-color: none;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 820px;
     grid-template-rows: 200px 60px auto 240px;
     margin-top: 29px;
     background: rgba(255, 255, 255, 0.8) linear-gradient(to left, transparent 0%, #68b738d9 0%, #68b738d9 38%, transparent 38%);
+    background-image: url("../img/images/img-general-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 720px;
+    background-position: 91% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/img-general-desktop@2x.png");
+    }
   }
 }
+
 
 .wrapper__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 36px;
   color: #ffffff;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 25px;
+  margin-top: 27px;
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -89,6 +109,7 @@
 
   @media (min-width: @desktop-width) {
     width: 552px;
+    margin-left: 0;
   }
 }
 
