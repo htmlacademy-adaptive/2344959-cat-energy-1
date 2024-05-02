@@ -1,15 +1,14 @@
 .wrapper {
   display: grid;
-  background: rgba(255, 255, 255, 0.8) linear-gradient(to bottom, transparent 0%, #68b738d9 0%, #68b738d9 65%, transparent 65%);
+  background-image:url("../img/images/img-general.jpg");
   margin-bottom: 20px;
-  background-image: url("../img/images/img-general.png");
   background-repeat: no-repeat;
   background-size: 320px;
-  background-position: 50% 3px;
+  background-position: 50% -1px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/images/img-general@2x.png");
-  }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/img-general@2x.jpg");
+    }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -21,18 +20,16 @@
     grid-template-columns: 1fr 820px;
     grid-template-rows: 200px 60px auto 240px;
     margin-top: 29px;
-    background: rgba(255, 255, 255, 0.8) linear-gradient(to left, transparent 0%, #68b738d9 0%, #68b738d9 38%, transparent 38%);
-    background-image: url("../img/images/img-general-desktop.png");
+    background-image: url("../img/images/img-general-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 720px;
     background-position: 91% 50%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/images/img-general-desktop@2x.png");
+      background-image: url("../img/images/img-general-desktop@2x.jpg");
     }
   }
 }
-
 
 .wrapper__title {
   font-family: "Oswald", sans-serif;
@@ -44,7 +41,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 25px;
-  margin-top: 27px;
+  margin-top: 24px;
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -109,7 +106,7 @@
 
   @media (min-width: @desktop-width) {
     width: 552px;
-    margin-left: 0;
+    margin-left: -60px;
   }
 }
 
@@ -121,10 +118,11 @@
   color: #ffffff;
   background-color: #68b738;
   text-decoration: none;
-  padding: 13px 63px;
+  padding: 10px 63px;
   text-transform: uppercase;
   display: inline-block;
   justify-self: center;
+  margin-top: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

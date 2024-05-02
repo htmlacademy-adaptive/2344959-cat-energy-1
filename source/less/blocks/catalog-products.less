@@ -1,15 +1,28 @@
 .catalog-products__catalog-gift {
   display: flex;
   padding: 43px 61px 43px 58px;
-  margin: 35px 0;
-  background-color: #68b738d9;
+  margin-bottom: 38px;
+  margin-top: 28px;
+  background-image: url("../img/images/background-catalog.jpg");
+  background-size: 280px 290px;
   height: 290px;
   color: #ffffff;
   border-top: 1px solid #cdcdcd;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/images/background-catalog@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     height: 200px;
     padding: 71px 135px;
+    background-image: url("../img/images/background-catalog-tablet.jpg");
+    background-size: 707px 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/background-catalog-tablet@2x.jpg");
+    }
+
   }
 
   @media (min-width: @desktop-width) {
@@ -17,6 +30,12 @@
     margin-left: 80px;
     margin-top: 0;
     padding: 43px 42px;
+    background-image: url("../img/images/background-catalog-desktop.jpg");
+    background-size: 245px 288px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/images/background-catalog-desktop@2x.jpg");
+    }
   }
 }
 
@@ -27,6 +46,7 @@
   font-weight: 400;
   line-height: 36px;
   text-transform: none;
+  margin-bottom: 55px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -56,7 +76,7 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
-  margin: 26px 0 36px 0;
+  margin: 0 0 36px 0;
 
   @media (min-width: @tablet-width) {
     margin-top: 70px;
