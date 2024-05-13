@@ -34,10 +34,14 @@
 .footer__footer-address {
   display: flex;
   padding: 26px 20px;
+  margin: 0;
 
 
   @media (min-width: @tablet-width) {
     padding: 60px 70px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,11 +93,17 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    width: 157px;
   }
 }
 
 .footer__div-block {
   background-color: #f2f2f2;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+  }
 }
 
 .footer__div {
@@ -116,11 +126,6 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-
-  @media (min-width: @tablet-width) {
-  gap: 23px;
-  justify-content: end;
-  }
 }
 
 .footer__logo-htmlacademy {
@@ -134,6 +139,11 @@
   align-items: center;
   justify-content: space-between;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+    gap: 23px;
+  }
 }
 
 .footer__img {

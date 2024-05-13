@@ -4,11 +4,16 @@
   margin-top: 20px;
   gap: 20px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    gap: 32px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: revert;
     gap: 80px;
-    margin-top: 82px;
+
     margin-bottom: 71px;
   }
 }
@@ -21,6 +26,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
+    padding: 78px 0 52px 52px;
   }
 
   @media (min-width: @desktop-width) {
