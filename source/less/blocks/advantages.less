@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 20px;
   gap: 20px;
 
   @media (min-width: @desktop-width) {
@@ -16,8 +15,8 @@
 
 .advantages__item {
   display: grid;
-  grid-template-columns: 55px 110px auto;
-  padding: 30px 20px;
+  grid-template-columns: 67px 110px auto;
+  padding: 22px 20px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
@@ -32,7 +31,8 @@
   }
 }
 
-.advantages__item-img {
+.advantages__item-before,
+.advantages__item-after {
   @media (min-width: @tablet-width) {
     display: block;
     grid-column: 2/3;
@@ -40,10 +40,44 @@
     align-self: center;
     justify-self: center;
     padding: 0;
+
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
+  }
+}
+
+.advantages__item-before {
+  display: block;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.advantages__item-after {
+  display: block;
+  width: 67px;
+  height: 50px;
+  margin-left: -7px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 100px;
   }
 }
 
@@ -54,9 +88,10 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 15px;
   align-self: center;
   grid-column: 2/4;
+  margin-left: 3px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
@@ -78,7 +113,8 @@
   line-height: 18px;
   color: #00000080;
   grid-column: 1/4;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
+  margin-top: 23px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
@@ -113,7 +149,7 @@
     position: absolute;
     background-image: url("../img/images/arrow.svg");
     top: 50%;
-    left: 100%;
+    left: 120%;
     width: 24px;
     height: 12px;
     transform: translate(5px, -50%);
