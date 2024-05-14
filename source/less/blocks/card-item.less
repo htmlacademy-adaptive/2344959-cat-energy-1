@@ -2,13 +2,25 @@
   align-self: center;
   width: 140px;
   grid-row: 1/3;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+}
+
+.card-item__img {
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
 }
 
 .card-item__card-title {
   font-size: 16px;
   line-height: 20px;
   align-self: center;
-  margin-top: 3px;
+  margin-top: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -92,6 +104,6 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 40px;
-    margin-top: 32px;
+    margin-top: 51px;
   }
 }

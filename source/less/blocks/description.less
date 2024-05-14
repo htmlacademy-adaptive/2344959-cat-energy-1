@@ -1,5 +1,7 @@
 .description {
-  padding-bottom: 27px;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .description__title {
@@ -15,6 +17,10 @@
     font-size: 60px;
     line-height: 60px;
     margin: 54px 0 32px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 70px 0 32px 0;
   }
 }
 
