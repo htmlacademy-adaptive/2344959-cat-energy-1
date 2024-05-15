@@ -52,15 +52,20 @@
   margin-top: 38px;
   margin-left: -22px;
 
- @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
    font-size: 60px;
    line-height: 60px;
    justify-content: normal;
    margin-top: 60px;
    margin-bottom: 94px;
    margin-left: 0;
- }
   }
+
+  @media (min-width: @tablet-width) {
+   margin-top: 38px;
+   margin-bottom: 94px;
+  }
+}
 
 
 .catalog-products__card-list {
@@ -79,7 +84,8 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 37px;
   }
 }
 
@@ -101,7 +107,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 76px;
+    margin-left: 0;
+    margin-top: 39px;
   }
 }
 
