@@ -1,6 +1,6 @@
 .examples {
   background-color: #eaeaea;
-  padding-top: 25px;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
@@ -110,7 +110,6 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  margin-bottom: 8px;
   margin-right: 3px;
 
   @media (min-width: @tablet-width) {
@@ -174,6 +173,7 @@
     width: 560px;
     height: 512px;
     margin-top: 99px;
+    background: linear-gradient(to bottom, white 30%, white 30%, #EAEAEA 20%, #EAEAEA 20%);
   }
 
   @media (min-width: @desktop-width) {
@@ -243,4 +243,16 @@
         height: 512px;
       }
     }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/images/vector-reng-slider.svg");
+      display: block;
+      left: 50%;
+      top: 50%;
+      width: 24px;
+      height: 18px;
+      transform: translate(-50%, -50%);
+}
 }
