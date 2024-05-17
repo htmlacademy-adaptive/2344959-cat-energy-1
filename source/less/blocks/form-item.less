@@ -46,7 +46,7 @@
     content: "";
     position: absolute;
     top: -23%;
-    left: -40px;
+    left: -45px;
     width: 30px;
     height: 30px;
     display: block;
@@ -66,13 +66,18 @@
     content: "";
     position: absolute;
     background-image: url("../img/images/tick-form.svg");
-    top: -12%;
-    left: -55px;
-    width: 26px;
-    height: 26px;
+    top: -15%;
+    left: -41px;
+    width: 18px;
+    height: 14px;
     display: block;
     border: none;
-  }
+
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: 19px;
+    }
+}
 }
 
 .form-item__radio {
@@ -141,6 +146,7 @@
   padding: 14px 15px 13px 15px;
   flex-grow: 1;
   text-transform: uppercase;
+  margin: 0;
 
   &:last-child {
     margin-bottom: 0;
