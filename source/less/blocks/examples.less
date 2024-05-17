@@ -141,7 +141,6 @@
   line-height: 20px;
   text-transform: uppercase;
   align-self: center;
-  margin-top: 8px;
   margin-left: 0;
   margin-top: 33px;
   margin-bottom: 20px;
@@ -173,12 +172,11 @@
     width: 560px;
     height: 512px;
     margin-top: 99px;
-    background: linear-gradient(to bottom, white 30%, white 30%, #EAEAEA 20%, #EAEAEA 20%);
+    background: linear-gradient(to bottom, #ffffff 30%, #ffffff 30%, #eaeaea 20%, #eaeaea 20%);
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 224px;
-
   }
 }
 
@@ -228,31 +226,31 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-    &::after {
-      position: absolute;
-      content: "";
-      display: block;
-      left: 50%;
-      top: 50%;
-      width: 4px;
-      height: 256px;
-      transform: translate(-50%, -50%);
-      background-color: #666666;
+  &::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 256px;
+    transform: translate(-50%, -50%);
+    background-color: #666666;
 
-      @media (min-width: @tablet-width) {
-        height: 512px;
-      }
+    @media (min-width: @tablet-width) {
+      height: 512px;
     }
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/images/vector-reng-slider.svg");
-      display: block;
-      left: 50%;
-      top: 50%;
-      width: 24px;
-      height: 18px;
-      transform: translate(-50%, -50%);
-}
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/images/vector-reng-slider.svg");
+    display: block;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+  }
 }
