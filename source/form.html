@@ -21,13 +21,13 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/images/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/images/logo-tablet.svg">
-        <img class="header__logo-img-mobil" src="img/images/logo-mobil.svg" width="33" height="38" alt="логотип Cat Energy">
+        <img class="header__logo-img-mobil" src="img/images/logo-mobil.svg" alt="логотип Cat Energy">
       </picture>
 
       <picture>
         <source media="(min-width: 1200px)" srcset="img/images/logo-text-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/images/logo-text-mobil.svg">
-        <img class="header__logo-img-mobil" src="img/images/logo-text-mobil.svg" width="101" height="18" alt="cat energy">
+        <img class="header__logo-img-mobil" src="img/images/logo-text-mobil.svg" alt="cat energy">
       </picture>
 
     </div>
@@ -42,9 +42,9 @@
         </nav>
       </header>
 
-  <main class="main-form">
+  <main class="main-form container">
 
-      <section class="main-form__program-form program-form container">
+      <section class="main-form__program-form program-form">
         <form class="program-form__form" action="https://echo.htmlacademy.ru" method="post">
           <h1 class="program-form__title">Подбор программы</h1>
           <p class="program-form__text">Заполните анкету, и мы подберем
@@ -106,7 +106,7 @@
             <legend class="additionally__title">Дополнительно</legend>
             <div class="additionally__form-item form-item">
               <input class="form-item__additionally__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
-              <label class="form-item__form-text form-item__form-text-additionally" for="sweetener">сахарозаменитель</label>
+              <label class="form-item__form-text form-item__form-text-additionally form-item__form-text-additionally--checked" for="sweetener">сахарозаменитель</label>
             </div>
             <div class="additionally__form-item form-item">
               <input class="form-item__additionally__input visually-hidden" type="checkbox" id="water" name="water">
@@ -147,12 +147,33 @@
       </div>
       <div class="footer__div-block">
       <div class="footer__div container">
-          <a class="footer__copyright" href="#"><img src="img/images/logo-2.svg" width="128" height="24" alt="cat energy"></a>
-          <ul class="footer__social-list social-list">
-            <li class="social-list__item"><a class="social__link" href="">Вконтакте</a></li>
-            <li class="social-list__item"><a class="social__link" href="">Ютуб</a></li>
-            <li class="social-list__item"><a class="social__link" href="">Телеграм</a></li>
-          </ul>
+        <a class="footer__copyright" href="#"><img src="img/images/logo-text-mobil.svg" width="128" height="24" alt="cat energy"></a>
+        <ul class="footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social__link" href="#">
+              <svg class="social-list__login-icon" width="28" height="22">
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social__link" href="#">
+              <svg class="social-list__login-icon" width="28" height="22">
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social__link" href="#">
+              <svg class="social-list__login-icon" width="28" height="22">
+                <use xlink:href="sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
           <a class="footer__logo-htmlacademy" href="#"><span>HTML Academy</span>
 
             <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">

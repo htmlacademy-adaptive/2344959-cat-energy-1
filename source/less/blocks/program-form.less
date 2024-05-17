@@ -1,5 +1,6 @@
 .program-form__form {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
+  padding: 0 40px;
 }
 
 .program-form__title {
@@ -39,6 +40,10 @@
   margin-top: 25px;
   align-items: flex-start;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 77px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     margin-top: 66px;
@@ -51,6 +56,7 @@
 
   @media (min-width: @tablet-width) {
   display: flex;
+  margin-top: 44px;
   }
 }
 
@@ -66,13 +72,13 @@
   padding: 14px 24px;
   text-transform: uppercase;
   border: none;
-  margin-top: 34px;
+  margin-top: 29px;
   height: 40px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 60px;
-    margin-top: 52px;
+    height: 54px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,6 +95,7 @@
   margin-right: auto;
   margin-left: auto;
   width: 157px;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
