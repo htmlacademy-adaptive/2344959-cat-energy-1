@@ -34,10 +34,14 @@
 .footer__footer-address {
   display: flex;
   padding: 26px 20px;
+  margin: 0;
 
 
   @media (min-width: @tablet-width) {
     padding: 60px 70px;
+    margin-top: 46px;
+    margin-bottom: 20px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,16 +88,22 @@
   font-weight: 400;
   line-height: 20px;
   color: #444444;
-  margin-left: 28px;
+  margin-left: 3px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    width: 157px;
   }
 }
 
 .footer__div-block {
   background-color: #f2f2f2;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+  }
 }
 
 .footer__div {
@@ -112,6 +122,12 @@
   }
 }
 
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
 .footer__logo-htmlacademy {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -119,7 +135,15 @@
   line-height: 20px;
   color: #444444;
   text-decoration: none;
-  align-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+    gap: 23px;
+  }
 }
 
 .footer__img {

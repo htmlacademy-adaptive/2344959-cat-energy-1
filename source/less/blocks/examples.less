@@ -1,15 +1,17 @@
 .examples {
   background-color: #eaeaea;
-  padding-top: 25px;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) {
-    background-color: #eaeaea;
+    background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
     background-color: #eaeaea;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0;
+    padding-left: 10px;
   }
 }
 
@@ -22,12 +24,15 @@
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 76px;
+    margin-top: 50px;
   }
 }
 
@@ -41,11 +46,12 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
-    margin: 70px 0 69px 0;
+    margin: 70px 0 41px 0;
   }
 }
 
@@ -68,10 +74,13 @@
   display: flex;
   gap: 32px;
   justify-content: center;
+  margin-top: 6px;
 
 
   @media (min-width: @tablet-width) {
     gap: 43px;
+    margin-top: 56px;
+    margin-left: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -80,7 +89,20 @@
 }
 
 .examples__table {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #cdcdcd;
+  margin: 0;
+  padding: 0;
+  width: 124px;
+  height: 56px;
+  padding-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
 }
 
 .examples__detail-title {
@@ -89,10 +111,12 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  margin-right: 3px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 2px;
   }
 }
 
@@ -101,6 +125,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin: 0;
+  padding: 9px 10px;
+  width: 77px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -115,12 +142,16 @@
   line-height: 20px;
   text-transform: uppercase;
   align-self: center;
+  margin-left: 0;
+  margin-top: 33px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin-left: auto;
     width: 174px;
+    margin-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -129,12 +160,27 @@
   }
 }
 
-.examples__div-img {
-  grid-column: 2/3;
-  grid-row: 1/4;
+.examples__div-block {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 256px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin-top: 99px;
+    background: linear-gradient(to bottom, #ffffff 30%, #ffffff 30%, #eaeaea 20%, #eaeaea 20%);
+  }
 
   @media (min-width: @desktop-width) {
-    margin-left: 224px;
+    margin-left: 49px;
+    margin-top: 60px;
+    grid-column: 2 / -1;
+    grid-row: 1 / 4;
   }
 }
 
@@ -146,4 +192,74 @@
 .examples__img-cat-after {
   grid-column: 3/4;
   grid-row: 1/3;
+}
+
+.examples__cat-before {
+  display: flex;
+  width: 50%;
+  overflow: hidden;
+}
+
+.examples__cat-after {
+  display: flex;
+  width: 50%;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.examples__img {
+  display: block;
+  max-width: 280px;
+  height: 256px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 560px;
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.examples__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  outline: 2px solid #666666;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 256px;
+    transform: translate(-50%, -50%);
+    background-color: #666666;
+
+    @media (min-width: @tablet-width) {
+      height: 512px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/images/vector-reng-slider.svg");
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 100%;
+    z-index: 1;
+  }
 }

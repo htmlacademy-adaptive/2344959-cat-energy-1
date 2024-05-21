@@ -1,13 +1,12 @@
 .form-item {
   display: flex;
-  margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
     &:last-child {
       margin-bottom: 0;
@@ -23,6 +22,8 @@
   line-height: 18px;
   color: #444444;
   padding: 0;
+  margin-top: 13px;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -34,12 +35,12 @@
   position: relative;
   margin-left: 45px;
   margin-bottom: 32px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     margin-left: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
   }
-
 
   &::before {
     content: "";
@@ -50,6 +51,32 @@
     height: 30px;
     display: block;
     outline: 1px solid #cdcdcd;
+
+    @media (min-width: @tablet-width) {
+      top: -24%;
+      left: -60px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.form-item__form-text-additionally--checked {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/images/tick-form.svg");
+    top: -15%;
+    left: -41px;
+    width: 18px;
+    height: 14px;
+    display: block;
+    border: none;
+
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: 19px;
+    }
   }
 }
 
@@ -63,6 +90,7 @@
   position: relative;
   padding-left: 45px;
   padding-bottom: 13px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 5px;
@@ -76,13 +104,18 @@
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: -4px;
     left: 0;
     width: 30px;
     height: 30px;
     display: block;
     border-radius: 50%;
     outline: 1px solid #cdcdcd;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -90,13 +123,18 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 9px;
     width: 13px;
     height: 13px;
     display: block;
     border-radius: 50%;
     background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -104,9 +142,11 @@
   outline: 1px solid #e7e7e7;
   border: none;
   margin-bottom: 14px;
-  margin-left: 13px;
+  margin-left: 23px;
   padding: 14px 15px 13px 15px;
   flex-grow: 1;
+  text-transform: uppercase;
+  margin: 0;
 
   &:last-child {
     margin-bottom: 0;

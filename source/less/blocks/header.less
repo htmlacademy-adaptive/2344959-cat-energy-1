@@ -1,21 +1,39 @@
 .header {
   display: flex;
   align-items: center;
-  margin-top: 2px;
   justify-content: space-between;
   position: relative;
+  margin-top: 13px;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 25px;
+  }
 
   @media (min-width: @desktop-width) {
-    margin-top: 55px;
+    margin-top: 68px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header--mod-index-desktop {
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header--index {
+    margin-top: -5px;
   }
 }
 
 .header__div {
   display: flex;
-  gap: 19px;
+  gap: 56px;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    gap: 13px;
+    gap: 14px;
   }
 }
