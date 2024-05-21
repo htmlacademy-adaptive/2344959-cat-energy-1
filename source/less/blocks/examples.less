@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
+    padding-left: 10px;
   }
 }
 
@@ -50,7 +51,7 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
-    margin: 70px 0 69px 0;
+    margin: 70px 0 41px 0;
   }
 }
 
@@ -176,7 +177,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 224px;
+    margin-left: 49px;
+    margin-top: 60px;
+    grid-column: 2 / -1;
+    grid-row: 1 / 4;
   }
 }
 
